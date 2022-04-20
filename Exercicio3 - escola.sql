@@ -1,27 +1,27 @@
 CREATE DATABASE db_escola;
-use db_escola;
+USE db_escola;
 
-create table tb_estudantes(
-	id bigint auto_increment,
-    nome varchar(255),
-    turma varchar(25),
-    nota double,
-    matricula varchar(10),
-    primary key (id)
+CREATE DATABASE tb_estudantes(
+	id BIGINT AUTO_INCREMENT,
+    nome VARCHAR(255),
+    turma VARCHAR(25),
+    nota DOUBLE,
+    matricula VARCHAR(10),
+    PRIMARY KEY (id)
 );
 
-insert into tb_estudantes(nome, turma, nota, matricula) values("Yhuri Gross", "5C", 0.0, "123456");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Marjory Matos", "9A", 10.0, "321654");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Simone Bispo", "8B", 8.0, "159357");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Aecio Augustineli", "7D", 7.5, "951753");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Helen Sales", "6B", 7.0, "258369");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Gabriele Souza", "7C", 4.0, "369147");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Silvio Ricardo", "5A", 6.0, "147258");
-insert into tb_estudantes(nome, turma, nota, matricula) values("Priscila G", "8D", 8.5, "258147");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Yhuri Gross", "5C", 0.0, "123456");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Marjory Matos", "9A", 10.0, "321654");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Simone Bispo", "8B", 8.0, "159357");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Aecio Augustineli", "7D", 7.5, "951753");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Helen Sales", "6B", 7.0, "258369");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Gabriele Souza", "7C", 4.0, "369147");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Silvio Ricardo", "5A", 6.0, "147258");
+INSERT INTO tb_estudantes(nome, turma, nota, matricula)VALUES("Priscila G", "8D", 8.5, "258147");
 
-select * from tb_estudantes;
+SELECT * FROM tb_estudantes;
 
-select * from tb_estudantes where nota > 7;
-select * from tb_estudantes where nota < 7;
+SELECT * FROM tb_estudantes WHERE nota > 7;
+SELECT * FROM tb_estudantes WHERE nota < 7;
 
-update tb_estudantes set nota = 7.9 where id = 1;	
+UPDATE tb_estudantes SET nota = 7.9 WHERE id = 1;	

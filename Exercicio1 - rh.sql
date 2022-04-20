@@ -1,31 +1,31 @@
 CREATE DATABASE db_rh;
-use db_rh;
+USE db_rh;
 
-create table td_funcionarios(
-	id bigint auto_increment,
-    nome varchar(255),
-    salario float,
-    cargo varchar(200),
-    funcao varchar(255),
-    primary key (id)
+CREATE TABLE td_funcionarios(
+	id BIGINT AUTO_INCREMENT,
+    nome VARCHAR(255),
+    salario FLOAT,
+    cargo VARCHAR(200),
+    funcao VARCHAR(255),
+    PRIMARY KEY (id)
 );
 
-insert into td_funcionarios(nome, salario, cargo, funcao)values("Marisa Carmelita", 2000.00, "Secretaria", "Administracao");
-insert into td_funcionarios(nome, salario, cargo, funcao)values("Fernando Bezerra", 1000.00, "Ajudante geral", "Estoquista");
-insert into td_funcionarios(nome, salario, cargo, funcao)values("Gabriela Fernandes", 500.00, "Estagiária", "Administracao");
-insert into td_funcionarios(nome, salario, cargo, funcao)values("Marcelo Dias", 5000.00, "Gestor de RH", "rh");
+INSERT INTO td_funcionarios(nome, salario, cargo, funcao)VALUES("Marisa Carmelita", 2000.00, "Secretaria", "Administracao");
+INSERT INTO td_funcionarios(nome, salario, cargo, funcao)VALUES("Fernando Bezerra", 1000.00, "Ajudante geral", "Estoquista");
+INSERT INTO td_funcionarios(nome, salario, cargo, funcao)VALUES("Gabriela Fernandes", 500.00, "Estagiária", "Administracao");
+INSERT INTO td_funcionarios(nome, salario, cargo, funcao)VALUES("Marcelo Dias", 5000.00, "Gestor de RH", "rh");
 
-select * from td_funcionarios;
+SELECT * FROM td_funcionarios;
 
-select * from td_funcionarios where salario > 2000; 
+SELECT * FROM td_funcionarios WHERE salario > 2000; 
 
-select * from td_funcionarios where salario < 2000;
+SELECT * FROM td_funcionarios WHERE salario < 2000;
 
-select * from td_funcionarios;
+SELECT * FROM td_funcionarios;
 
-update td_funcionarios set salario = 600.00 where id = 4;
+UPDATE td_funcionarios SET salario = 600.00 WHERE id = 4;
 
-select * from td_funcionarios;
+SELECT * FROM td_funcionarios;
 
 
 
